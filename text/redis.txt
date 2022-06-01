@@ -1,0 +1,22 @@
+docker =>
+docker run -d -p 6379:6379 --name redis redis
+docker exec -it app_placements-store_1 sh
+
+inside shell =>
+redis-cli
+
+############
+set name kyle
+set age 26 (string)
+del age
+exists name
+keys *
+flushall
+
+ttl name
+=> time to leave
+
+expire name 10
+=> expire in 10 seconds
+
+setex [key] [second] [value]

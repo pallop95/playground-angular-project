@@ -1,0 +1,33 @@
+{
+  "tips": [
+    {
+      "id": 1,
+      "topic": "chess",
+      "detailIds": [1, 2]
+    }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "detailName": "how-to-win",
+      "lists": [
+        {
+          "th": "ต้องเป็นฝ่ายรุก ให้อีกฝั่งตั้งรับ",
+          "en": "you have to be a shark not a prey, think what they will move before they move"
+        },
+        {
+          "th": "ล้อมก่อนรุก",
+          "en": "prepare the piece around the target before attack it"
+        },
+        {
+          "th": "ตั้งฐานแบบ solid(ไม่ต้องได้เปรียบ) น่าจะพอสำหรับ 2พัน",
+          "en": "build the opening like bliz(30sec mode)"
+        },
+        {
+          "th": "เบี้ยมีประโยชน์มากกว่าเป็นแค่เมียน้อย",
+          "en": "Pawn can pressure and do useful thing much more than become Queen."
+        }
+      ]
+    }
+  ]
+}

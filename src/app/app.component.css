@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+.content {
+  /* background: #71FA4C; */
+  background: transparent;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

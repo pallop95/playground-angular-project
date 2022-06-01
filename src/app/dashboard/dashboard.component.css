@@ -1,0 +1,12 @@
+:host {
+  padding: 30px
+}
+
+/* :host .example-spacer { */
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-divider {
+  border-top-color: rgba(0, 0, 0, 0.12);
+}

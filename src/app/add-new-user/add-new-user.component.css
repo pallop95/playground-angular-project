@@ -1,0 +1,61 @@
+:host {
+  padding: 30px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content-header {
+  margin-top: 20px;
+  background-color: #F4FAFF;
+  /* padding: 10px; */
+  border-radius: 8px;
+}
+
+.content-body {
+  background-color: white;
+}
+
+.center {
+  margin: auto;
+  /* width: 50%; */
+  /* border: 3px solid green; */
+  /* padding: 10px; */
+}
+
+.sub-label {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.label-show-text {
+  /* font-family: 'Krungthai Fast'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+
+  /* Black/70 */
+
+  color: rgba(18, 18, 18, 0.7);
+}
+
+.show-text {
+  /* font-family: 'Krungthai Fast'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+
+  /* Black/100 */
+  color: #121212;
+}
+
+.margin-top-16 {
+  margin-top: 100px;
+}

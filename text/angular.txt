@@ -1,0 +1,53 @@
+
+
+angular
+-fxFlex
+npm i @angular/flex-layout
+
+-rxjs
+
+
+===========###########============
+ng commands
+
+ng generate module app-routing --flat --module=app
+
+ng generate module dashboard/dashboard-routing --flat --module=dashboard
+
+#######################################################################
+create feature module with routing
+#######
+**
+ng generate module customers --route customers --module app.module
+
+in routing custom name has been changed
+**
+ng g module test-flex-layout --route test-flex-layout --module app-routing-v2.module.ts
+#######################################################################
+
+install flex layout
+#######
+**
+npm install --save @angular/flex-layout @angular/cdk
+
+#######################################################################
+
+styling
+      :host [selector] {}
+
+But if we did want to override the styles of all the h2 elements, there is still a way.
+The ::ng-deep pseudo-class selector
+      :host ::ng-deep h2 {color: red;}
+*deplicated
+
+The :host-context pseudo-class selector
+=> export multiple themes to host so they can choose which one to show
+      :host-context(.red-theme) .btn-theme {
+        background: red;
+      }
+      :host-context(.blue-theme) .btn-theme {
+          background: blue;
+      }
+<div class="blue-theme">
+    <themeable-button></themeable-button>
+</div>

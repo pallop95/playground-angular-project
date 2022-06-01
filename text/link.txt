@@ -1,0 +1,10 @@
+rxjs
+
+imperative to declaratibve programming
+
+https://www.learnrxjs.io/learn-rxjs/operators?q=pipe
+https://kruschecompany.com/rxjs-pros-and-cons/
+
+
+reuse layout in angular
+https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2

@@ -1,0 +1,324 @@
+<div class="content">
+  <h1 class="center sub-label">
+    {{ ADD_NEW_USER.MAIN_LABEL }}
+  </h1>
+</div>
+<mat-divider></mat-divider>
+
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="12px grid">
+    <div fxFlex="80%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+      <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div fxFlex="20%">
+            <h1 class="sub-label">{{ ADD_NEW_USER.CONTENT_1.SUB_LABEL }}</h1>
+          </div>
+          <div fxFlex="80%">
+            <div fxLayout="column" fxLayoutGap="10px grid">
+              <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                <div fxFlex="50%">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>{{ ADD_NEW_USER.CONTENT_1.INPUTS.I1 }}</mat-label>
+                    <input type="text" matInput>
+                    <mat-icon matSuffix>search</mat-icon>
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutGap="2px grid">
+                <div fxFlex="50%">
+                  <mat-card class="mat-elevation-z0">
+                    <mat-card-title class="label-show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I2 }}</mat-card-title>
+                    <mat-card-content class="show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I2 }}</mat-card-content>
+                  </mat-card>
+                </div>
+                <div fxFlex="50%">
+                  <mat-card class="mat-elevation-z0">
+                    <mat-card-title class="label-show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I3 }}</mat-card-title>
+                    <mat-card-content class="show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I3 }}</mat-card-content>
+                  </mat-card>
+                </div>
+                <div fxFlex="50%">
+                  <mat-card class="mat-elevation-z0">
+                    <mat-card-title class="label-show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I4 }}</mat-card-title>
+                    <mat-card-content class="show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I4 }}</mat-card-content>
+                  </mat-card>
+                </div>
+                <div fxFlex="50%">
+                  <mat-card class="mat-elevation-z0">
+                    <mat-card-title class="label-show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I5 }}</mat-card-title>
+                    <mat-card-content class="show-text">{{ ADD_NEW_USER.CONTENT_1.INPUTS.I5 }}</mat-card-content>
+                  </mat-card>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                <div fxFlex="50%">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>{{ ADD_NEW_USER.CONTENT_1.INPUTS.I6 }}</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div fxFlex="20%">
+            <h1 class="sub-label">{{ ADD_NEW_USER.CONTENT_2.SUB_LABEL }}</h1>
+          </div>
+          <div fxFlex="80%">
+            <div fxLayout="column wrap" fxLayoutGap="10px grid">
+              <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                <div fxFlex="50%">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>{{ ADD_NEW_USER.CONTENT_2.INPUTS.I1 }}</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                <div fxFlex="50%">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>{{ ADD_NEW_USER.CONTENT_2.INPUTS.I2 }}</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div fxFlex="50%">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>{{ ADD_NEW_USER.CONTENT_2.INPUTS.I3 }}</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                <div fxFlex="50%">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>{{ ADD_NEW_USER.CONTENT_2.INPUTS.I4 }}</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div fxFlex="50%">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>{{ ADD_NEW_USER.CONTENT_2.INPUTS.I5 }}</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div fxFlex="20%">
+            <h1 class="sub-label">{{ ADD_NEW_USER.CONTENT_3.SUB_LABEL }}</h1>
+          </div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div *ngFor="let item of ADD_NEW_USER.CONTENT_3.INPUTS | keyvalue: originalOrder" fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ item.value }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ ADD_NEW_USER.SELECT_ALL_CHECKBOX }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div fxFlex="20%">
+            <h1 class="sub-label">{{ ADD_NEW_USER.CONTENT_4.SUB_LABEL }}</h1>
+          </div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ ADD_NEW_USER.CONTENT_4.INPUT }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content content-header">
+        <div fxLayout="row" fxLayoutAlign=" center">
+          <div fxFlex="20%">
+            <h1 class="center sub-label">{{ ADD_NEW_USER.CONTENT_5.SUB_LABEL }}</h1>
+          </div>
+          <div fxFlex="80%">
+            <mat-checkbox [(ngModel)]="checkbox1">{{ ADD_NEW_USER.CONTENT_5.INPUT }}</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="content content-body">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div *ngFor="let item of ADD_NEW_USER.CONTENT_5.INPUTS | keyvalue: originalOrder" fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ item.value }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ ADD_NEW_USER.SELECT_ALL_CHECKBOX }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content content-header">
+        <div fxLayout="row" fxLayoutAlign=" center">
+          <div fxFlex="20%">
+            <h1 class="center sub-label">{{ ADD_NEW_USER.CONTENT_6.SUB_LABEL }}</h1>
+          </div>
+          <div fxFlex="80%">
+            <mat-checkbox [(ngModel)]="checkbox1">{{ ADD_NEW_USER.CONTENT_6.INPUT }}</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="content content-body">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div *ngFor="let item of ADD_NEW_USER.CONTENT_6.INPUTS | keyvalue: originalOrder" fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ item.value }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ ADD_NEW_USER.SELECT_ALL_CHECKBOX }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content content-header">
+        <div fxLayout="row" fxLayoutAlign=" center">
+          <div fxFlex="20%">
+            <h1 class="center sub-label">{{ ADD_NEW_USER.CONTENT_7.SUB_LABEL }}</h1>
+          </div>
+          <div fxFlex="80%">
+            <mat-checkbox [(ngModel)]="checkbox1">{{ ADD_NEW_USER.CONTENT_7.INPUT }}</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="content content-body">
+        <div fxLayout="row wrap" fxLayoutGap="2px grid">
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%" class="sub-label">
+                {{ ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG1.HEADER }}
+              </div>
+              <div fxFlex="50%"></div>
+              <div *ngFor="let item of ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG1.INPUTS| keyvalue: originalOrder" fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ item.value }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content content-body" style="padding-top: 0px;">
+        <div fxLayout="row wrap" fxLayoutGap="2px grid">
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%" class="sub-label">
+                {{ ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG2.HEADER }}
+              </div>
+              <div fxFlex="50%"></div>
+              <div *ngFor="let item of ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG2.INPUTS| keyvalue: originalOrder" fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ item.value }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content content-body" style="padding-top: 0px;">
+        <div fxLayout="row wrap" fxLayoutGap="2px grid">
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%" class="sub-label">
+                {{ ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG3.HEADER }}
+              </div>
+              <div fxFlex="50%"></div>
+              <div *ngFor="let item of ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG3.INPUTS| keyvalue: originalOrder" fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ item.value }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="content content-body">
+
+        <div fxLayout="row wrap" fxLayoutGap="2px grid">
+          <div fxFlex="20%"></div>
+          <div fxFlex="80%">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="50%" class="sub-label">
+                {{ ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG1.HEADER }}
+              </div>
+              <div fxFlex="50%"></div>
+              <div *ngFor="let item of ADD_NEW_USER.CONTENT_7.INPUT_GROUPS.IG1.INPUTS| keyvalue: originalOrder" fxFlex="50%">
+                <mat-checkbox [(ngModel)]="checked">{{ item.value }}</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!--
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi">
+  </mat-form-field>
+</div>
+-->
